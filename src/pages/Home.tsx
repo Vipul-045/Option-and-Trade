@@ -5,10 +5,11 @@ function Home() {
       <div className="font-serif">
         <div className="flex">
           <div className="flex flex-col text-5xl text-center px-10 vh-100 justify-center text-blue-950">
-            <span className="min-w-max pb-4 ">Welcome to
-              Option and Trade </span>
-            <span>
-              Financial Private Limited
+            <span className="min-w-max text-4xl pb-4">Welcome to</span>
+            <span className="min-w-max pb-2 font-sans ">
+              Option and Trade Financial</span>
+            <span className="font-sans text-5xl">
+              Private Limited
             </span>
           </div>
           <div className="px-10 py-8 ">
@@ -19,10 +20,11 @@ function Home() {
         <div className="flex flex-col items-center justify-center text-center">
           <div className="text-4xl text-center mt-40">Get to know us</div>
           <div className="max-w-4xl text-lg">
-            <p>We Are Experts In Banknifty And Nifty Option Advisory
+            <p className="font-sans">
+              We Are Experts In Banknifty And Nifty Option Advisory
             We are the most reliable stock market advisory services; in essence, we are a research company for technology that supports trading.
             </p>
-            <p>
+            <p className="">  
             Our expert advisers provide trading recommendations for indexes like Banknifty and Nifty; we are experts in Banknifty and Nifty Option Advisory; we have assisted more than 9,000 satisfied clients over the course of our more than 12 years in the stock market.
             </p>
 
