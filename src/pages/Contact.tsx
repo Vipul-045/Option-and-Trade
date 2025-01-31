@@ -1,29 +1,71 @@
 
-function Contact() {
+
+interface PopupFormProps {
+  closePopup: () => void;
+}
+
+const PopupForm = () => {
   return (
-    <div>
-      <div className="text-2xl justify-center text-center p-10">Contact us</div>
-      <div>
-        <form action="" className="flex justify-center">
-          <div className=" flex flex-col items-center w-96 justify-center border-2">
-            <div className="flex flex-col">
-              <label>Name</label>
-              <input type="text"  placeholder="Enter your name" className="border-2 p-1 rounded-md w-full border-blue-950"/>
-            </div>
-            <div className="flex flex-col">
-              <label>Email</label>
-              <input type="email" className="border-2 p-1 rounded-md border-blue-950 px-7" name="email" id="email" />
-            </div>
-            <div className="flex flex-col">
-              <label>Message</label>
-              <textarea name="message" id="message" cols={30} className="border-2 border-blue-950" rows={10}></textarea>
-            </div>
-            <button type="submit" className="m-5 px-3 py-1 rounded-md border-2 border-blue-950">Submit</button>
-          </div>    
+    <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50">
+      <div className="bg-white p-8 rounded-lg shadow-lg w-96 relative">
+        {/* Close Button */}
+        <button
+              
+              className="absolute top-2 right-2 text-gray-600 hover:text-gray-900"
+            >
+              &times;
+            </button>
+
+        {/* Form */}
+        <form action="" className="flex flex-col space-y-4">
+          <div className="flex flex-col">
+            <label className="mb-1 font-medium text-gray-700">Name</label>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              className="border-2 p-2 rounded-md w-full border-blue-950 focus:outline-none focus:border-blue-700"
+            />
+          </div>
+
+          <div className="flex flex-col">
+            <label className="mb-1 font-medium text-gray-700">Email</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="border-2 p-2 rounded-md w-full border-blue-950 focus:outline-none focus:border-blue-700"
+            />
+          </div>
+
+          <div className="flex flex-col">
+            <label className="mb-1 font-medium text-gray-700">
+              Contact Number
+            </label>
+            <input
+              type="tel"
+              placeholder="Enter your contact number"
+              className="border-2 p-2 rounded-md w-full border-blue-950 focus:outline-none focus:border-blue-700"
+            />
+          </div>
+
+          <div className="flex flex-col">
+            <label className="mb-1 font-medium text-gray-700">Message</label>
+            <textarea
+              placeholder="Enter your message"
+              rows={4}
+              className="border-2 p-2 rounded-md w-full border-blue-950 focus:outline-none focus:border-blue-700"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            className="mt-4 px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-blue-700 transition duration-300"
+          >
+            Submit
+          </button>
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default PopupForm;
