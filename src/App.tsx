@@ -2,7 +2,7 @@ import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Aboutus from './pages/Aboutus';
 import PopupForm from './pages/Contact';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 
 function App() {
 
