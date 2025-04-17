@@ -12,9 +12,9 @@ function App() {
 
   return (
     <BrowserRouter>
-      <header className='bg-white shadow'>
+      <header className='mx-14'>
         <DisclaimerPopup />
-        <nav className='flex px-40 py-3 container mx-auto justify-between items-center align-middle'>
+        <nav className='flex m-4 px-20 py-2 container justify-between items-center align-middle rounded-full bg-gray-100'>
           <div className='text-2xl text-blue-900 font-bold'>
             <Link to='/'>Option and Trade</Link>
           </div>
@@ -25,7 +25,7 @@ function App() {
           </div>
           <div>
             <Link to="/Popupform" className='text-gray-700 hover:text-blue-600 transition colors'>
-              <button type="button" className="text-gray-900 text-md bg-gray-100 hover:bg-blue-100  font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center  mb-2">
+              <button type="button" className="text-gray-900 text-md bg-blue-100 hover:bg-blue-200  font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center ">
                 Contact us
               </button></Link>
           </div>
